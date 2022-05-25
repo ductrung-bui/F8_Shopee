@@ -344,6 +344,11 @@ input.input-content {
 .container__banner-item-icon{
     height: auto;
     width: 100px;
+    cursor: pointer;
+}
+
+.container__banner-item-icon:hover{
+    animation: fadeUp ease 1s;
 }
 
 .container__banner-item-icon p{
@@ -364,5 +369,13 @@ input.input-content {
         opacity: 0;
     } to {
         opacity: 1;
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        transform: translateY(0);
+    } to{
+        transform: translateY(-25%);
     }
 }
